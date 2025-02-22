@@ -1,5 +1,5 @@
 import './App.css'
-import LoadingScreen from './Componets/Loadin Screen/LoadingScreen'
+import LoadingScreen from './Components/Loadin Screen/LoadingScreen'
 function App() {
  
 
