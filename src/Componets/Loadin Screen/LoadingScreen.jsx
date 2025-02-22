@@ -18,7 +18,7 @@ const LoadingScreen = () => {
 
       start += deltaTime * 0.12; // Slightly faster but still smooth
 
-      if (start >= 50 && !showSecondName) {
+      if (start >= 61.5 && !showSecondName) {
         setShowSecondName(true);
       }
 
@@ -32,13 +32,15 @@ const LoadingScreen = () => {
             if (reverseStart <= 0) {
               setProgress(0);
               setTimeout(() => {
-                setTransitionComplete(true);
+                setTransitionComplete(true); 
                 setLoading(false);
-              }, 400); // Small delay before revealing HeroCard
+              }, 400); // Small delay before revealing Hero
             } else {
               setProgress(reverseStart);
               requestAnimationFrame(reverseAnimate);
+              setTransitionComplete(true)
             }
+            
           };
           requestAnimationFrame(reverseAnimate);
         }, 500); // Wait 0.5s before reversing
@@ -52,27 +54,46 @@ const LoadingScreen = () => {
   }, []);
 
   if (loading || !transitionComplete) {
-    console.log(progress);
+    console.log(transitionComplete)
     return (
-      <div className={`loading-screen ${transitionComplete ? 'transition-complete' : ''}`}>
-        <div className="names-container">
-          <h1 className={`loading-name ${showSecondName ? 'second' : 'first'}-name`} style={{ zIndex: 5 }}>
-            {showSecondName ? 'Venkatesh Ryadu' : 'Karthik Ramesh'}
-          </h1>
+    <>
+      <div className={`${transitionComplete ? 'come-out' : ''}`}>
+        {/* Hero Content is Visible from the Start but Fades in */}
+        <Hero />
         </div>
-
-        {/* Sliding transition effect */}
-        <div
-          className="transition-effect"
-          style={{
-            transform: `translateX(${progress}%)`,
-          }}
-        />
-      </div>
+        {/* Loading Overlay - Fades Out as Progress Returns to 0 */}
+        {(loading || !transitionComplete) && (
+          <div className={`loading-screen ${transitionComplete ? 'transition-complete' : ''}`}>
+            <div className="names-container">
+              <h1
+                className={`display-1 ${showSecondName ? 'second-name' : 'first-name'} 
+                  ${showSecondName && transitionComplete ? 'fade-out' : ''}`}
+                style={{ zIndex: 5 }}
+              >
+                {showSecondName ? 'Venkatesh Rayudu' : 'Karthik Ramesh'}
+              </h1>
+    
+              {/* Progress Bar - Visible until transitionComplete is true */}
+              {!transitionComplete && (
+                <div className="progress-bar-container">
+                  <div className={`progress-${showSecondName ? 'dark' : 'light'}`} style={{ width: `${progress}%` }} />
+                </div>
+              )}
+            </div>
+    
+            {/* Sliding transition effect */}
+            <div
+              className="transition-effect"
+              style={{
+                transform: `translateX(${progress}%)`,
+              }}
+            />
+          </div>
+        )}
+    </>
     );
-  }
-
-  return <Hero/>;
+  }    
+  return <Hero />;
 };
 
 export default LoadingScreen;

@@ -8,7 +8,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: var(--bg-light);
+    z-index: 999;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .hide {
+    z-index: 0; 
+  }
+  .come-out{
+    z-index: 90;
   }
   
   .names-container {
@@ -20,34 +29,59 @@
     height: 100%;
   }
   
-  .loading-name {
-    font-size: 3rem;
-    font-weight: bold;
-    position: absolute;
-    white-space: nowrap;
-    margin: 0;
-    padding: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
   
   .first-name {
-    color: black;
+    color: var(--text-dark);
     z-index: 5;
 }
 
 /* Initially, Venkatesh is behind */
 .second-name {
-    color: white;
-    z-index: 2;
+  color: var(--text-light);
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
+/* Fade down when transition is complete */
+.second-name.fade-out {
+  opacity: 0;
+  transform: translateY(60px); /* Moves it further down */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
   .transition-effect {
     position: absolute;
     top: 0;
     left: -100%;
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: var(--bg-dark);
     z-index: 3;
     transition: transform 0.03s linear;
   }
   
+  .progress-bar-container {
+    position: absolute;
+    bottom: 300px; /* Adjusted for visibility */
+    left: 60%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 10; /* Ensures visibility */
+  }
+  
+  .progress-light {
+    height: 100%;
+    background-color: var(--text-dark);
+    color: var(--text-dark); /* Black progress bar */
+    width: 0%;
+    transition: width 0.1s linear;
+  }
+  .progress-dark{
+    background-color: var(--text-light) !important;
+    color: var(--text-light);
+  }
