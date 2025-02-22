@@ -16,9 +16,9 @@ const LoadingScreen = () => {
       const deltaTime = currentTime - lastTime;
       lastTime = currentTime;
 
-      start += deltaTime * 0.12; // Slightly faster but still smooth
+      start += deltaTime * 0.09; // Slightly faster but still smooth
 
-      if (start >= 61.5 && !showSecondName) {
+      if (start >= 50 && !showSecondName) {
         setShowSecondName(true);
       }
 
