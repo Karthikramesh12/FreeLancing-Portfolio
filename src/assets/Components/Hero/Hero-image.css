@@ -1,0 +1,19 @@
+.Hero-imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Hero-imgs img {
+  filter: grayscale(100%);
+
+  /* Additional filters to enhance the contrast and tone */
+  filter: grayscale(100%) contrast(120%) brightness(100%);
+
+  /* Optional: Add a subtle vignette effect with box-shadow */
+  /* box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5); */
+
+  /* Ensure the image maintains its aspect ratio */
+  max-width: 100%;
+  width: 35rem;
+  height: 35rem;
+}
