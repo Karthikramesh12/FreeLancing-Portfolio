@@ -1,4 +1,4 @@
-import Karthik from "../../Images/Karthik.png";
+import Karthik from "../../assets/Images/Karthik.png";
 import './Hero-image.css';
 const HeroImg=()=>{
     return (<>

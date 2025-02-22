@@ -1,12 +1,12 @@
 import './App.css'
-import Hero from './assets/Components/Hero/Hero'
+import LoadingScreen from './Componets/Loadin Screen/LoadingScreen'
 function App() {
  
 
   return (
     <>
     
-      <Hero />
+      <LoadingScreen/>
       
     </>
   )

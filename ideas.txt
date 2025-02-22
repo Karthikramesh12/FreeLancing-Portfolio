@@ -1,4 +1,4 @@
-this is karthik's idea where we can have a loading page similar to this https://www.therafaelbk.com/ and a hero section that takes up the entire screen so height: 100vh and also when we scroll the next image and text will come up. 
+this is karthik's idea where we can have a loading page similar to this https://    www.therafaelbk.com/ and a hero section that takes up the entire screen so height: 100vh and also when we scroll the next image and text will come up. 
 
 after this we can have our project section where there is a background transistion similar to this website https://my-portfolio-zeta-five-70.vercel.app/ from light to dark theme and also the projects section can look similar to this https://my-portfolio-zeta-five-70.vercel.app/ 
 
