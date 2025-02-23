@@ -7,9 +7,12 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  --bg-dark: #333b50;
+  --bg-dark: #171717;
   --text-light: #ffffff;
   --text-bold: #0cb048;
+  --bg-light: #f8f8f8;
+  --card-bg: #333b50;
+  --text-dark: #000000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
