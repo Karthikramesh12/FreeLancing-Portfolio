@@ -30,6 +30,7 @@
     color: transparent;
   /* Optional: make text bold to show gradient better */
     font-weight: bold;
+    font-family: "Didot", "Modern No. 20", serif; 
   }
   .navbar-brand:hover{
     background-image: linear-gradient(45deg, #0cb048, rgb(7, 207, 237)) !important;
