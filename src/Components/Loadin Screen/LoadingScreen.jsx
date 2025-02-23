@@ -3,6 +3,7 @@ import Hero from '../Hero/Hero';
 import './LoadingScreen.css';
 import NavBar from '../Nav/Nav';
 
+
 const LoadingScreen = () => {
   const [progress, setProgress] = useState(0);
   const [loading, setLoading] = useState(true);
@@ -97,6 +98,7 @@ const LoadingScreen = () => {
   return <>
   <NavBar />
     <Hero />
+    
   </>;
 };
 
