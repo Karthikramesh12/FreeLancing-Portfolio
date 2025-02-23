@@ -1,0 +1,25 @@
+.nav{
+    background-color: rgba(51, 59, 80,1) !important;
+}
+/* Nav.css */
+.navbar .container-fluid {
+    position: relative;
+  }
+  
+  .navbar-collapse {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .navbar-nav {
+    text-align: center;
+  }
+  
+  /* Ensure mobile responsiveness */
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      position: static;
+      transform: none;
+    }
+  }
