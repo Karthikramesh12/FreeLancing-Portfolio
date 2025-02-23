@@ -1,5 +1,6 @@
 import './Skills.css';
-import Skill_img from '../../../assets/Images/Services-icons/035244_9f46dd7c6e524eef94172c670fff1913~mv2_d_1920_1343_s_2.jpg';
+import '../Hero/Hero.css'
+import Skill_img from '../../assets/Images/Services-icons/035244_9f46dd7c6e524eef94172c670fff1913~mv2_d_1920_1343_s_2.jpg';
 import { useState, useRef, useEffect } from 'react';
 
 function Skills() {
@@ -58,10 +59,10 @@ function Skills() {
       </div>
       
       {/* Tint overlay */}
-      <div className="tint-overlay position-absolute top-0 start-0 w-100 h-100" />
+      <div className="tint-overlay glass-overlay position-absolute top-0 start-0 w-100 h-100" />
       
       {/* Content container */}
-      <div className="position-absolute w-100 h-100">
+      <div className="position-absolute w-100 h-100 overlay-dark">
         <div className="container h-100 d-flex flex-column justify-content-center">
           <div className="text-center mb-5">
             <h2 className="display-1 text-color fw-normal mb-3">01 PROFESSIONALS</h2>
