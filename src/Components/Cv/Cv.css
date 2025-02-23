@@ -1,0 +1,25 @@
+.Cv-card{
+    width: 60% !important;
+    position: relative;
+    left: 20%;
+    height: 30rem !important;
+    top: -15rem !important;
+    background-color:rgba(51, 59, 80,1) !important ;
+    border-radius: 0px !important;
+    border: none !important;
+    display:flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: whitesmoke !important;
+}
+.Cv-button{
+    border: 1px solid  #0cb048 !important;
+    color: white !important;
+    border-radius: 0px !important;
+}
+.Cv-button:hover{
+    background-color: #0cb048 !important;
+}
+.card-heading{
+    color: #0cb048;
+}
