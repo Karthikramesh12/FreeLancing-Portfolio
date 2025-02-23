@@ -19,6 +19,7 @@ img {
 .hero-content {
     padding-left: 25rem; /* Moves the text more to the right */
     max-width: fit-content; /* Prevents unnecessary stretching */
+    z-index: 1;
   }
   .color{
     color: var(--text-bold);
