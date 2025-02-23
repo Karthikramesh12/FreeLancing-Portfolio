@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Hero from '../Hero/Hero';
 import './LoadingScreen.css';
 import NavBar from '../Nav/Nav';
+import Cv from '../Cv/Cv';
 
 const LoadingScreen = () => {
   const [progress, setProgress] = useState(0);
@@ -97,6 +98,7 @@ const LoadingScreen = () => {
   return <>
   <NavBar />
     <Hero />
+    <Cv/>
   </>;
 };
 
