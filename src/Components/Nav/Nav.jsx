@@ -3,10 +3,10 @@ import './Nav.css';
 const NavBar = () => {
   return (
     <>
-      <nav className="navbar nav navbar-expand-lg stick-top">
+      <nav className="navbar nav navbar-expand-lg sticky-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Navbar
+            KARTHIK | VENKATESH
           </a>
           <button
             className="navbar-toggler"
