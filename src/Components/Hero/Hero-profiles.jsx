@@ -46,7 +46,7 @@ const HeroProfiles = () => {
     return (
        
         
-      <div className="scroll-container" style={{ height: `${100 * profileData.length}vh` }}>
+      <div className="scroll-container" style={{ height: `${300 * profileData.length}vh` }}>
         <div className="sticky-container">
         <HeroAnimation />
           {profileData.map((profile, index) => (

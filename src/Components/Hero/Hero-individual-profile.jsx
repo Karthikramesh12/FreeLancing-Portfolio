@@ -4,7 +4,7 @@ import './ProfileAnimation.css';
 
 const EachProfile = ({ name, image, profession, isActive, direction }) => {
   return (
-    <div className="hero-container mt-5">
+    <div className="hero-container">
     <div className={`container  profile-section ${isActive ? 'active' : ''} ${direction}`}>
       <div className="container Hero-content-margin">
       <div className="row">

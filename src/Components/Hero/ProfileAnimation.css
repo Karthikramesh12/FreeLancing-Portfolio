@@ -1,15 +1,18 @@
-.scroll-container {
-    position: relative;
-}
+
 
 .sticky-container {
     position: sticky;
     top: 0;
     height: 100vh;
-    
-    /* overflow: hidden; */
+    margin: 0;
+    padding: 0;
 }
-
+.scroll-container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 0;
+  }
 .profile-section {
     position: absolute;
     width: 100%;
@@ -17,6 +20,9 @@
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-section.active {
