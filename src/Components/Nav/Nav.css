@@ -23,3 +23,34 @@
       transform: none;
     }
   }
+  .navbar-brand{
+    background-image: linear-gradient(45deg, #0cb048, rgb(7, 207, 237));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  /* Optional: make text bold to show gradient better */
+    font-weight: bold;
+  }
+  .navbar-brand:hover{
+    background-image: linear-gradient(45deg, #0cb048, rgb(7, 207, 237)) !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .navbar-brand:focus{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .active{
+    color: #0cb048 !important;
+  }
+  .nav-link{
+    color: gray;
+  }
+  .nav-link:hover{
+    color: white;
+  }
+  .nav-link:focus{
+    color: white;
+  }
