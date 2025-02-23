@@ -1,2 +1,27 @@
+.glass-overlay {
+    background-color: #4F627F; /* More bluish tint */
+    opacity: 0.5; /* Slightly increased opacity for better effect */
+}
 
+.overlay-dark {
+    background: rgba(10, 15, 30, 0.4); /* Dark blue overlay instead of pure black */
+}
 
+/* Optional: Add transition for smooth effect */
+.glass-overlay, .overlay-dark {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Ensure the image stays sharp */
+img {
+    filter: brightness(0.95) contrast(1.1); /* Slight contrast boost for clarity */
+}
+.hero-content {
+    padding-left: 25rem; /* Moves the text more to the right */
+    max-width: fit-content; /* Prevents unnecessary stretching */
+  }
+  .color{
+    color: var(--text-bold);
+  }
+  
+  
