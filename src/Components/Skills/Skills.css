@@ -25,4 +25,7 @@
     position: absolute;
     object-fit: contain; /* Ensures the image stretches to fit */
   }
+  .position-margin{
+    margin-top: -10px;
+  }
   

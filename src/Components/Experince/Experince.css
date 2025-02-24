@@ -1,0 +1,134 @@
+.timeline-section
+{
+    background-image: url('../../assets/Images/Services-icons/experince-bg.jpg');
+    width: 100%;
+    height: 100%;
+    padding: 100px 15px;
+}
+.margin-top{
+    margin-top: 400px;
+}
+.timeline-section h2{
+    margin-bottom: 5rem;
+}
+.timeline-items
+{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.timeline-items::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: var(--timeline-fill, 0%); /* Dynamically controlled height */
+    background-color: var(--text-bold); /* Blue gradient */
+    left: calc(50% - 1px);
+    transition: height 0.7s ease-in-out; /* Slower transition effect */
+}
+
+
+.timeline-item
+{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+.timeline-item:last-child
+{
+    margin-bottom: 0;
+}
+.timeline-item:nth-child(odd)
+{
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+.timeline-item:nth-child(even)
+{
+    padding-left: calc(50% + 30px);
+    text-align: auto;
+}
+.timeline-dot
+{
+    height: 19px;
+    width: 19px;
+    background-color: var(--text-bold);
+    box-shadow:  0 0 25px var(--text-bold);
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+.timeline-data
+{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    margin: 6px 0 15px;
+}
+.timeline-section {
+    background-image: url('../../assets/Images/Services-icons/experince-bg.jpg');
+    width: 100%;
+    height: 100%;
+    padding: 100px 15px;
+    position: relative; /* Allows absolute positioning of overlay */
+}
+
+/* Applying the tint effect */
+.timeline-section .overlay-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(53, 80, 163, 0.45);  /* Dark blue tint */
+    z-index: 0; /* Ensures it is behind content */
+}
+
+/* Ensure content is above the overlay */
+.timeline-items {
+    position: relative;
+    z-index: 1;
+}
+
+/* Text adjustments */
+.text-color {
+    color: var(--text-light) !important; /* Ensuring visibility */
+}
+
+/* .timeline-content
+{
+    background-color: var(--bg-dark);
+    backdrop-filter: blur(20px);
+    border: 2px solid var(--text-bold);
+    box-shadow:  0 0 10px var(--text-bold);
+    padding: 30px;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.timeline-content:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--text-bold);
+}
+.timeline-content h3
+{
+    font-size: 20px;
+    color: var(--text-bold);
+    margin: 0 0 10px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.timeline-content
+{
+    color: white;
+    opacity: 0.8;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+} */
+ .text-align{
+    text-align: left !important;
+ }
