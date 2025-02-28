@@ -54,7 +54,7 @@
   } */
   .view-content{
     height: 250px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(175, 175, 179);
   }
 .tech-stack-view{
     height: 250px;
@@ -112,4 +112,13 @@
     display: flex !important;
     flex-direction: column;
     align-items: center;
+ }
+ .tech-stack-list{
+    list-style: none;
+  padding: 0;
+  margin: 0;
+
+ } 
+ .tech-stack-list li{
+    border: 0px !important;
  }

@@ -57,7 +57,7 @@ function Projects() {
           <div className="project-card" key={index}>
             <img src={project.image} alt={project.title} />
             <div className="card-body">
-            <div className='view-content'>
+            <div className='view-content mb-3'>
             <div className='card-content'>
               <h5 className="card-title m-3">{project.title}</h5>
               <p className="text-muted m-3"><strong>Developed By:</strong>@{project.developedBy}</p>
@@ -67,13 +67,15 @@ function Projects() {
               </div>
               </div>
              
-           <div className='tech-stack-view'>
-              <p className="tech-stack"><strong>Tech Stack:</strong></p>
+           <div className='tech-stack-view '>
+           <div className='d-flex flex-column justify-content-center align-items-center text-center'>
+              <p className="tech-stack "><strong>Tech Stack:</strong></p>
               <ul className="tech-stack-list">
                 {project.techStack.map((tech, i) => (
-                  <li key={i}>{tech}</li>
+                  <li className='badge bg-primary me-1' key={i}>{tech}</li>
                 ))}
               </ul>
+              </div>
               <div className='projects-buttons'>
                 {project.live ? (
                   <a href={project.live} className="btn d-flex align-items-center justify-content-center project-button w-100" target="_blank" rel="noopener noreferrer">
