@@ -42,7 +42,7 @@ function Footer() {
             </div>
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4 text-light-footer">Products</h6>
+              <h6 className="text-uppercase fw-normal mb-4 text-light-footer">Products</h6>
               <p className="text-light-footer">
                 <a href="#!" className="text-reset anchor">
                   React
@@ -66,7 +66,7 @@ function Footer() {
             </div>
 
             <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4 text-light-footer">Useful Links</h6>
+              <h6 className="text-uppercase fw-normal mb-4 text-light-footer">Useful Links</h6>
               <p className="text-light-footer">
                 <a href="#!" className="text-reset anchor">
                   Home
@@ -90,7 +90,7 @@ function Footer() {
             </div>
 
             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <h6 className="text-uppercase fw-bold mb-4 text-light-footer">Contact</h6>
+              <h6 className="text-uppercase fw-normal mb-4 text-light-footer">Contact</h6>
               <p  className="text-light-footer">
                 <i className="fas fa-envelope me-3"></i>
                 info@example.com
