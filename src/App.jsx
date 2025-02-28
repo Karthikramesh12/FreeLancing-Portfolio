@@ -1,6 +1,7 @@
 import './App.css'
 import Experince from './Components/Experince/Experince'
 import LoadingScreen from './Components/Loadin Screen/LoadingScreen'
+import Projects from './Components/Projects/Projects'
 import Skills from './Components/Skills/Skills'
 function App() {
  
@@ -9,6 +10,7 @@ function App() {
     <>
       <LoadingScreen/>
       <Skills/>
+      <Projects/>
       <Experince/>
     </>
   )
