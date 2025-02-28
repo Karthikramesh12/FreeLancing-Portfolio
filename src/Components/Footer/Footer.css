@@ -1,0 +1,9 @@
+.anchor{
+    text-decoration: none;
+}
+.footer-background{
+    background-color: var(--card-bg) !important;
+}
+.text-light-footer{
+    color: var(--footer-color);
+}
