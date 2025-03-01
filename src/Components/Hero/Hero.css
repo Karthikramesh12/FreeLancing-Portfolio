@@ -27,13 +27,22 @@
 }
 
 /* Dark overlay */
+.overlay-dark-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(34, 38, 50, 0.4);
+    z-index: 0;
+}
 .overlay-dark {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(10, 15, 30, 0.4);
+    /* background: rgba(34, 38, 50, 0.4); */
     z-index: 0;
 }
 

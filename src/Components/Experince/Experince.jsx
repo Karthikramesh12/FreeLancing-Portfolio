@@ -61,7 +61,6 @@ function Experience() {
 
   return (
     <section className="mt-5 mb-5" id="education" ref={timelineRef}>
-      <div className="overlay-dark"></div>
 
       <div className="d-flex justify-content-center align-items-center">
         <h2 className="heading display-1 text-dark">03 EXPERIENCE</h2>

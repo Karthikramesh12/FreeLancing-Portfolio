@@ -3,6 +3,8 @@
 }
 .footer-background{
     background-color: var(--card-bg) !important;
+    position: relative;
+    z-index: 10 !important;
 }
 .text-light-footer{
     color: var(--footer-color);
