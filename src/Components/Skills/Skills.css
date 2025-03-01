@@ -20,11 +20,14 @@
     color: var(--text-light);
   }
   .skills-bg {
+    position: sticky;
+    top: 0;
     width: 100%;
-    height: auto !important;
-    position: absolute;
-    object-fit: contain; /* Ensures the image stretches to fit */
-  }
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+}
+
   .position-margin{
     margin-top: -10px;
   }
