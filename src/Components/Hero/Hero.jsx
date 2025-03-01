@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="glass-overlay" />
 
       {/* Dark overlay */}
-      <div className="overlay-dark" />
+      <div className="overlay-dark-sticky" />
 
       {/* Content container */}
       <div className="hero-content">

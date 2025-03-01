@@ -14,14 +14,15 @@
 }
 .Cv-button{
     border: 1px solid  var(--text-color2) !important;
-    color: var(--text-color2)  !important;
+    color: var(--text-dark)  !important;
+    background-color: var(--text-color2);
     border-radius: 0px !important;
 }
 .Cv-button:hover{
     /* background-color: #009bee  !important; */
     color: black !important;
     /* background-color: #04ffc4  !important; */
-    background-image: var(--gradient-bg1) !important;
+    background-color: transparent !important;
 }
 .card-heading{
     color: var(--text-color2) ;

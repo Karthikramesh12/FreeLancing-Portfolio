@@ -59,7 +59,7 @@ function Skills() {
       </div>
       
       {/* Tint overlay */}
-      <div className="tint-overlay  position-absolute top-0 start-0 w-100 h-100" />
+      <div className="position-absolute top-0 start-0 w-100 h-100" />
       
       {/* Content container */}
       <div className="position-absolute w-100 overlay-dark">
