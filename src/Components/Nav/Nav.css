@@ -1,5 +1,5 @@
 .nav{
-    background-color: rgba(51, 59, 80,1) !important;
+    background-color: var(--bg-color) !important;
 }
 /* Nav.css */
 .navbar .container-fluid {
@@ -24,7 +24,7 @@
     }
   }
   .navbar-brand{
-    background-image: linear-gradient(45deg, #0cb048, rgb(7, 207, 237));
+    background-image: var(--gradient-bg1) !important;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

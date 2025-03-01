@@ -22,7 +22,7 @@ img {
     z-index: 1;
   }
   .color{
-    color: var(--text-bold);
+    color: var(--text-color2);
   }
   
   

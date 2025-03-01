@@ -4,7 +4,7 @@
     left: 20%;
     height: 30rem !important;
     top: -15rem !important;
-    background-color:rgba(51, 59, 80,1) !important ;
+    background-color:var(--bg-color) !important ;
     border-radius: 0px !important;
     border: none !important;
     display:flex !important;
@@ -13,14 +13,17 @@
     color: whitesmoke !important;
 }
 .Cv-button{
-    border: 1px solid  #0cb048 !important;
-    color: white !important;
+    border: 1px solid  var(--text-color2) !important;
+    color: var(--text-color2)  !important;
     border-radius: 0px !important;
 }
 .Cv-button:hover{
-    background-color: #0cb048 !important;
+    /* background-color: #009bee  !important; */
+    color: black !important;
+    /* background-color: #04ffc4  !important; */
+    background-image: var(--gradient-bg1) !important;
 }
 .card-heading{
-    color: #0cb048;
+    color: var(--text-color2) ;
     font-family: "Didot", "Modern No. 20", serif;
 }
