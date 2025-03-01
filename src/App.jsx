@@ -5,6 +5,7 @@ import LoadingScreen from './Components/Loadin Screen/LoadingScreen'
 import Projects from './Components/Projects/Projects'
 import Skills from './Components/Skills/Skills'
 import Cv from './Components/Cv/Cv';
+import Contact from './Components/Contact/Contact';
 function App() {
  
 
@@ -15,6 +16,7 @@ function App() {
       <Skills/>
       <Projects/>
       <Experince/>
+      <Contact />
       <div className="footer">
 
       <Footer/>

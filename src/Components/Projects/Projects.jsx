@@ -50,11 +50,12 @@ const projects = [
 
 function Projects() {
   return (
+    <div className='Projects'>
     <div className="container my-5">
       <h2 className="text-center fw-bold main-heading py-4">Projects</h2>
       <div className="projects-container">
         {projects.map((project, index) => (
-          <div className="project-card" key={index}>
+          <div className="project-card shadow-lg" key={index}>
             <img src={project.image} alt={project.title} />
             <div className="card-body">
             <div className='view-content mb-3'>
@@ -92,6 +93,7 @@ function Projects() {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }

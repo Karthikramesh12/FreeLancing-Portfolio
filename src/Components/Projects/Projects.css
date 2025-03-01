@@ -11,9 +11,10 @@
     margin-bottom: 20px;
     break-inside: avoid;
     background-color: #eee;
+    /* background-color: var(--bg-color); */
     overflow: hidden;
     /* padding: 10px; */
-    border: 0.6rem solid #eee;
+    /* border: 0.6rem solid #eee; */
     position: relative;
     transition: transform 0.3s ease-in-out;
   }
@@ -37,15 +38,19 @@
     left: 0;
     width: 100%;
     height: 100%; /* Initially hides half */
-    background: #eee;
+    /* background: var(--bg-color); */
     backdrop-filter: blur(5px);
+    background: #eee;
     /* padding: 15px; */
     /* display: flex;
     flex-direction: column; */
     /* justify-content: center; */
-    color: black;
+    color: black !important;
     transition: transform 0.5s ease-in-out;
     transform: translateY(50%);
+  }
+  .Projects{
+    background-color: var(--bg-color) !important;
   }
   
   /* Hover Effect */
@@ -96,11 +101,17 @@
     width: 100% !important;
   }
   .project-button{
-    border: 1px solid  #0cb048 !important;
-    color: black !important;
+    border: 1px solid  var(--text-color2) !important;
+    color: --text-color2 !important;
     border-radius: 0px !important;
-    background-color: #0cb048;
+    background-image: var(--gradient-bg1) !important;
     height: 3rem !important;
+  }
+
+  .project-button:hover{
+    /* background: var(--gradient-bg) !important; */
+    color: black !important;
+    background-image: none !important;
   }
   .cards-description{
     height: 50%;

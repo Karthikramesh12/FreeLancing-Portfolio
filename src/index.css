@@ -3,8 +3,12 @@
 
 :root {
   /* font-family: poppins, system-ui, Avenir, Helvetica, Arial, sans-serif; */
-  
-
+    --text-color1:#04ffc4 ;
+    --text-color2:#009bee;
+    --bg-color:rgba(51, 59, 80,1);  
+    --gradient-bg1: linear-gradient(145deg,  #009bee,#04ffc4);
+    --gradient-bg2: linear-gradient(145deg, #04ffc4, #009bee);
+    --gradient-bg3: linear-gradient(45deg, #28e46d, rgb(7, 207, 237));
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   --bg-dark: #171717;
