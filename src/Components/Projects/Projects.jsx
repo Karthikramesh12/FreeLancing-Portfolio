@@ -86,7 +86,7 @@ const projects = [
 function Projects() {
   return (
     <div className='Projects'>
-      <div className="container">
+      <div className="container Zindex">
         <h2 className="text-center display-1 text-dark fw-normal py-4">02 OUR BEST WORKS</h2>
         <p className="lead fs-3 text-uppercase text-center text-dark">Some of the best projects we have worked on</p>
         <div className="projects-container">
