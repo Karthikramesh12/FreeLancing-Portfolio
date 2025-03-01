@@ -2,7 +2,6 @@
     border: none !important;
     border-radius: 0px !important;
     background-color: var(--bg-color);
-    z-index: 100 !important;
 }
 .form-control{
     border-radius: 0px !important;
