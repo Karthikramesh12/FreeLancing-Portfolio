@@ -2,7 +2,7 @@ import './Skills.css';
 import '../Hero/Hero.css'
 import Skill_img from '../../assets/Images/Services-icons/035244_9f46dd7c6e524eef94172c670fff1913~mv2_d_1920_1343_s_2.jpg';
 import { useState, useRef, useEffect } from 'react';
-// import Cv from '../Cv/Cv';
+import Cv from '../Cv/Cv';
 function Skills() {
   const [visibleBars, setVisibleBars] = useState(new Array(7).fill(false));
   const sectionRef = useRef(null);
@@ -54,7 +54,7 @@ function Skills() {
       <img 
         src={Skill_img}
         alt="Skills background" 
-        className="w-100 h-100 object-fit-cover position-absolute"
+        className="w-100 object-fit-cover position-absolute"
       />
       </div>
       
@@ -62,9 +62,9 @@ function Skills() {
       <div className="tint-overlay glass-overlay position-absolute top-0 start-0 w-100 h-100" />
       
       {/* Content container */}
-      <div className="position-absolute w-100 h-100 overlay-dark">
-      {/* <Cv/> */}
-        <div className="container h-100 d-flex flex-column justify-content-center">
+      <div className="position-absolute w-100 overlay-dark">
+      <Cv/>
+        <div className="container h-100 d-flex flex-column justify-content-center margin-top">
           <div className="text-center mb-5">
             <h2 className="display-1 text-color fw-normal mb-3">01 PROFESSIONALS</h2>
             <p className="lead text-white fs-3">OUR KNOWLEDGE LEVEL IN SOFTWARE</p>

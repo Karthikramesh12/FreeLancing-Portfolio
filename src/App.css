@@ -1,5 +1,18 @@
 .Main-content {
   background-color: transparent !important;
 }
+.hero-card {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.skills-section {
+  padding: 100px 20px;
+}
 
 

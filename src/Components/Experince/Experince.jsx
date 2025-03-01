@@ -60,7 +60,7 @@ function Experience() {
   }, []);
 
   return (
-    <section className="mt-5" id="education" ref={timelineRef}>
+    <section className="mt-5 mb-5" id="education" ref={timelineRef}>
       <div className="overlay-dark"></div>
 
       <div className="d-flex justify-content-center align-items-center">
