@@ -14,8 +14,10 @@ function App() {
       <LoadingScreen/>
       <Cv/>
       <Skills/>
+      <div className="timeline-section">
       <Projects/>
       <Experince/>
+      </div>
       <Contact />
       <div className="footer">
 

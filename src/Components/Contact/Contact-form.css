@@ -6,3 +6,39 @@
 .form-control{
     border-radius: 0px !important;
 }
+.form-label {
+    display: block;  /* Ensures labels take up full width */
+    text-align: left; /* Aligns text to the left */
+    font-weight: normal; /* Makes labels stand out */
+    margin-bottom: 5px; /* Adds spacing below labels */
+}
+.form-control-style {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Greenish hover effect */
+.form-control-style:hover,
+.form-control-style:focus {
+    background-color: #85dfb2; /* Light green tint */
+    border-color: #28a745; /* Darker green border */
+}
+.line-height{
+    line-height: 30px;
+}
+.Contact-button{
+    border: 1px solid  var(--text-bold) !important;
+    color: var(--text-light)  !important;
+    background-color: var(--text-bold);
+    border-radius: 0px !important;
+}
+.Contact-button:hover{
+    /* background-color: #009bee  !important; */
+    color: black !important;
+    /* background-color: #04ffc4  !important; */
+    background-color: transparent !important;
+    border-color: transparent !important;
+}

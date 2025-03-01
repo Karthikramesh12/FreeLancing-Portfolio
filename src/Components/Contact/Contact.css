@@ -1,3 +1,39 @@
-.contact{
-    background-color: #eee !important;
+.contact {
+    background-image: url('../../assets/Images/Contact/Contact-bg.avif');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding: 100px 15px;
+    position: relative; /* Allows absolute positioning of overlay */
+    z-index: 1;
+}
+
+/* Blue tint overlay */
+.contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(53, 80, 163, 0.45); /* Adjust opacity as needed */
+    z-index: -1;
+}
+.Cv-card-contact{
+    width: 70% !important;
+    position: relative;
+    left: 20%;
+    height: auto !important;
+    top: -15rem !important;
+    background-color:var(--bg-color) !important ;
+    border-radius: 0px !important;
+    border: none !important;
+    display:flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: whitesmoke !important;
+}
+.margin-contact{
+    margin-left: 10rem !important;
 }

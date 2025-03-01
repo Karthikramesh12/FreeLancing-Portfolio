@@ -1,10 +1,12 @@
 import { useState, useEffect, useRef } from "react";
-import './Contact-form.css';
+import "./Contact-form.css";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: "",
+    firstName: "",
+    lastName: "",
     email: "",
+    phone: "",
     message: "",
     access_key: "9bf6b278-7577-415f-af11-be3581d4fcca", // Web3Forms Access Key
   });
@@ -22,7 +24,7 @@ const ContactForm = () => {
           }
         });
       },
-      { threshold: 0.3 } // Trigger when 30% of the form card is visible
+      { threshold: 0.3 }
     );
 
     if (formRef.current) {
@@ -54,7 +56,14 @@ const ContactForm = () => {
 
       if (result.success) {
         setStatus("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "", access_key: "9bf6b278-7577-415f-af11-be3581d4fcca" });
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          message: "",
+          access_key: "9bf6b278-7577-415f-af11-be3581d4fcca",
+        });
       } else {
         setStatus("Failed to send message. Please try again.");
       }
@@ -73,39 +82,76 @@ const ContactForm = () => {
       <div className="row d-flex justify-content-center">
         <div ref={formRef} className={`form-card col-md-6 p-4 shadow-lg ${visible ? "fade-in-up" : ""}`}>
           <form className="form-floating" onSubmit={handleSubmit}>
-            <div className="mb-3">
-              <input
-                type="text"
-                className="form-control form-control-style"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder="Enter your name"
-                required
-              />
+            <div className="row">
+              {/* First Name */}
+              <div className="col-md-6">
+                <label className="form-label" htmlFor="firstName">First Name</label>
+                <input
+                  type="text"
+                  className="form-control form-control-style"
+                  id="firstName"
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              {/* Last Name */}
+              <div className="col-md-6">
+                <label className="form-label" htmlFor="lastName">Last Name</label>
+                <input
+                  type="text"
+                  className="form-control form-control-style"
+                  id="lastName"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
             </div>
+
             <div className="mb-3">
+              <label className="form-label" htmlFor="email">Email</label>
               <input
                 type="email"
                 className="form-control form-control-style"
+                id="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Enter email address"
                 required
               />
             </div>
+
+            {/* Phone Number Field */}
             <div className="mb-3">
+              <label className="form-label" htmlFor="phone">Phone Number</label>
+              <input
+                type="tel"
+                className="form-control form-control-style"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                pattern="[0-9]{10}" // Ensures only 10-digit numbers
+                required
+              />
+            </div>
+
+            <div className="mb-3">
+              <label className="form-label" htmlFor="message">Message</label>
               <textarea
-                className="form-control floatingInputValue"
+                className="form-control form-control-style floatingInputValue"
+                id="message"
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Enter your message"
                 rows="6"
                 required
               ></textarea>
             </div>
+
             <button type="submit" className="btn btn-outline-primary Cv-button">
               Send Message
             </button>

@@ -17,6 +17,7 @@
     /* border: 0.6rem solid #eee; */
     position: relative;
     transition: transform 0.3s ease-in-out;
+    z-index: 99 !important;
   }
   
   /* .project-card:hover {
@@ -49,9 +50,10 @@
     transition: transform 0.5s ease-in-out;
     transform: translateY(50%);
   }
-  .Projects{
+  /* .Projects{
     background-color: var(--bg-color) !important;
-  }
+    z-index: 99;
+  } */
   
   /* Hover Effect */
   /* .project-card:hover img {

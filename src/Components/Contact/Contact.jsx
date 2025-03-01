@@ -11,14 +11,24 @@ const contactLinks = [
 const Contact = () => {
   return (
     <div className="contact">
-    <div className="container  flex flex-col items-center justify-center text-center p-8 bg-gray-900 text-white">
-      <h2 className="fw-bold main-heading text-center py-4">Get in Touch</h2>
-      <p className="px-md-5 text-muted subtext">
-        I'm eager to join a collaborative team where I can contribute my skills and learn from others. 
-        If you have an exciting project, let's discuss how I can be a valuable asset. 
-        I'm actively seeking a new opportunity to apply my skills and continue growing!
+    <div className="card shadow-lg Cv-card-contact">
+    <div className="container d-flex items-center justify-content-center align-itmes-center text-center p-8 bg-gray-900 text-light row">
+      <div className="col-12 col-md-4 d-flex flex-column justify-content-center">
+      <h2 className="fw-normal main-heading mt-5 mb-4 margin-contact text-start card-heading display-6">Get in Touch</h2>
+      <p className="fs-6 text-light subtext text-start margin-contact line-height">
+        {`I'm eager to join a collaborative team where I can contribute my skills and learn from others. 
+        If you have an exciting project, let's discuss how I can be a valuable asset!`}
       </p>
+      <p className="fs-6 text-light subtext text-start margin-contact mt-5">
+        {`info@mysite.com
+Tel: 1-800-000-0000`}
+      </p>
+      </div>
+      <div className="col-12 col-md-8">
+
       <ContactForm />
+      </div>
+    </div>
       <div className="flex space-x-4 my-4 bg-gray-800 p-4 rounded-lg">
         {contactLinks.map((contact) => (
           <a
@@ -33,7 +43,7 @@ const Contact = () => {
         ))}
       </div>
     </div>
-    </div>
+      </div>
   );
 };
 
