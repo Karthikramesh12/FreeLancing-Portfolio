@@ -3,7 +3,7 @@ import Experince from './Components/Experince/Experince'
 import Footer from './Components/Footer/Footer'
 import LoadingScreen from './Components/Loadin Screen/LoadingScreen'
 import Projects from './Components/Projects/Projects'
-import Skills from './Components/Skills/Skills'
+// import Skills from './Components/Skills/Skills'
 import Contact from './Components/Contact/Contact';
 function App() {
  
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <LoadingScreen/>
-      <Skills/>
+      {/* <Skills/> */}
       <div className="timeline-section">
       <Projects/>
       <Experince/>
