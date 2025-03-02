@@ -70,7 +70,7 @@ function Skills() {
       <Cv/>
         <div className="container h-100 d-flex flex-column justify-content-center margin-top">
           <div className="text-center mb-5">
-            <h2 className="display-1 text-color fw-normal mb-3">01 PROFESSIONALS</h2>
+            <h2 className="display-1 text-color fw-normal mb-3 higlighted">01 Expertise </h2>
             <p className="lead text-white fs-3">OUR KNOWLEDGE LEVEL IN SOFTWARE</p>
           </div>
           

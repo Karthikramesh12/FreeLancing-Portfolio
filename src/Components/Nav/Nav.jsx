@@ -5,7 +5,7 @@ const NavBar = () => {
     <>
       <nav className="navbar nav navbar-expand-lg sticky-top">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand highlighted" href="#">
             KARTHIK | VENKATESH
           </a>
           <button

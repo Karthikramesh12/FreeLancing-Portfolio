@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
 .hero-container {
     position: relative;
     height: 100vh;
@@ -62,5 +64,8 @@
 
 /* Styling adjustments */
 .color {
-    color: var(--text-color2);
+    color: var(--text-bold);
+}
+.higlighted{
+    font-family: 'Allura' !important;
 }

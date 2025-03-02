@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 
+
 :root {
   /* font-family: poppins, system-ui, Avenir, Helvetica, Arial, sans-serif; */
     --text-color2:#04ffc4 ;
@@ -13,12 +14,12 @@
   color: rgba(255, 255, 255, 0.87);
   --bg-dark: #171717;
   --text-light: #ffffff;
-  --text-bold: #0cb048;
+  --text-bold: #00d646;
   --bg-light: #f8f8f8;
-  --card-bg: #333b50;
+  --card-bg: #3A4359;
   --text-dark: #000000;
   --glassy-tint: #707a8a;
-  --footer-color: #98a0b0;
+  --footer-color: #8A94A8;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

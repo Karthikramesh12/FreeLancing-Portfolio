@@ -10,21 +10,29 @@
     align-items: center;
     justify-content: center;
     color: whitesmoke;
-    padding: 1rem;
+    padding: 7rem;
 }
 
 /* Responsive Design: Full width for small screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1114px) {
+    .Cv-card {
+        width: 100% !important;
+        left: 0%;
+        padding: 1rem;
+    }
+}
+/* @media screen and (max-width: 768px) {
     .Cv-card {
         width: 100%;
         left: 0;
+        padding: 1rem;
     }
-}
+} */
 
 .Cv-button{
-    border: 1px solid  var(--text-color2) !important;
+    border: 1px solid  var(--text-bold) !important;
     color: var(--text-dark)  !important;
-    background-color: var(--text-color2);
+    background-color: var(--text-bold);
     border-radius: 0px !important;
 }
 .Cv-button:hover{
@@ -34,7 +42,7 @@
     background-color: transparent !important;
 }
 .card-heading{
-    color: var(--text-color2) ;
+    color: var(--text-bold) ;
     font-family: "Didot", "Modern No. 20", serif;
 }
 .Zindex{

@@ -1,7 +1,7 @@
 import { FaEnvelope, FaGithub, FaWhatsapp } from "react-icons/fa";
 import ContactForm from "./Contact-form";
 import './Contact.css';
-
+import '../Hero/Hero.css'
 const contactLinks = [
   { id: 1, icon: <FaEnvelope />, link: "mailto:venkateshrayudu.tech@gmail.com" },
   { id: 2, icon: <FaGithub />, link: "https://github.com/Venkatesh124rayudu" },
@@ -11,11 +11,11 @@ const contactLinks = [
 const Contact = () => {
   return (
     <div className="contact">
-    <div className="card shadow-lg Cv-card-contact">
+    <div className="card shadow-lg Cv-card-contact p-md-5">
     <div className="p-md-5">
     <div className="row">
       <div className="col-12 col-md-6 p-5 flex-card">
-      <h2 className="fw-normal main-heading mt-5 mb-4 margin-contact text-start card-heading display-6">Get in Touch</h2>
+      <h2 className="fw-normal main-heading mt-5 mb-4 margin-contact text-start card-heading display-6 higlighted">Get in Touch</h2>
       <p className="fs-6 text-light subtext text-center margin-contact line-height">
         {`I'm eager to join a collaborative team where I can contribute my skills and learn from others. 
         If you have an exciting project, let's discuss how I can be a valuable asset!`}

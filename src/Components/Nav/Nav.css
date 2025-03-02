@@ -24,7 +24,7 @@
     }
   }
   .navbar-brand{
-    background-image: var(--gradient-bg1) !important;
+    background-color: var(--text-bold) !important;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -44,7 +44,7 @@
     color: transparent;
   }
   .active{
-    color: #0cb048 !important;
+    color: var(--text-bold) !important;
   }
   .nav-link{
     color: gray;

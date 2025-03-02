@@ -1,7 +1,33 @@
 .projects-container {
     column-count: 3;
-    column-gap: 20px;
+    /* column-gap: 20px; */
   }
+  .tech-stack-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .tech-icon-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tech-icon {
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: contain !important;
+  }
+  .tech-icon-large {
+    width: 150px !important; /* Increase size only for MERN */
+    height: 150px !important;
+  }
+  
+  
   
   /* Project Card */
   .project-card {
@@ -103,10 +129,10 @@
     width: 100% !important;
   }
   .project-button{
-    border: 1px solid  var(--text-color2) !important;
+    /* border: 1px solid  var(--text-bold) !important; */
     color: --text-color2 !important;
     border-radius: 0px !important;
-    background-image: var(--gradient-bg1) !important;
+    background-color: var(--text-bold) !important;
     height: 3rem !important;
   }
 

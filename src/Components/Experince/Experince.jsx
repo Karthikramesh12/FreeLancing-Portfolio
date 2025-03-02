@@ -63,15 +63,15 @@ function Experience() {
     <section className="mt-5 mb-5" id="education" ref={timelineRef}>
 
       <div className="d-flex justify-content-center align-items-center">
-        <h2 className="heading display-1 text-dark">03 EXPERIENCE</h2>
+        <h2 className="heading display-1 text-light higlighted">03 Experience</h2>
       </div>
 
       <div className="timeline-items">
         {experienceData.map((item, index) => (
           <div className="timeline-item text-color" key={index}>
             <div className="timeline-dot"></div>
-            <div className="timeline-data text-dark">{item.year}</div>
-            <div className="timeline-content d-flex justify-content-center align-items-left flex-column container w-50 text-dark text-align">
+            <div className="timeline-data text-light">{item.year}</div>
+            <div className="timeline-content d-flex justify-content-center align-items-left flex-column container w-50 text-light text-align">
               <h3>{item.title}</h3>
               <p>{item.description}</p>
             </div>
