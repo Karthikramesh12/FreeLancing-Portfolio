@@ -109,7 +109,7 @@ const projects = [
 
 function Projects() {
   return (
-    <div className='Projects'>
+    <div className='Projects mt-5'>
       <div className="container Zindex">
         <h2 className="text-center display-1 text-light fw-normal higlighted">02 Our Best Works</h2>
         <p className="lead fs-3 text-uppercase text-center text-light mb-5">Some of the best projects we have worked on</p>

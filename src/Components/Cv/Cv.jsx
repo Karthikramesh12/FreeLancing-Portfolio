@@ -14,7 +14,7 @@ const Cv = () => {
     <>
       <div className="Cv-card mt-5">
         <h1 className="my-4 card-heading higlighted display-3">Karthik | Venkatesh</h1>
-        <div className="container px-5">
+        <div className="container">
           <p className="text-center my-4 text-uppercase px-5">
             Passionate about technology and innovation, We specialize in creating efficient and scalable solutions.
             With a strong foundation in Web Applications, We are always eager to learn and take on new challenges.
