@@ -48,7 +48,9 @@ function Skills() {
   }, []);
 
   return (
+
     <div className="position-relative vh-100" style={{ minHeight: '150vh' }} ref={sectionRef}>
+
       {/* Background image */}
       <div className="skills-bg">
       <img 
