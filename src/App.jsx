@@ -7,10 +7,6 @@ import LoadingScreen from './Components/Loadin Screen/LoadingScreen';
 import Projects from './Components/Projects/Projects';
 import Skills from './Components/Skills/Skills';
 
-import './App.css'
-
-
-
 import Contact from './Components/Contact/Contact';
 import ProjectsImg from './assets/Images/Services-icons/experince-bg.jpg';
 
@@ -18,8 +14,9 @@ function App() {
   return (
 
     <ParallaxProvider>
-      <LoadingScreen/>
-      <Skills/>
+      <LoadingScreen />
+      <Skills />
+
 
       <div className="timeline-section">
         <div className="parallax-container" style={{ position: 'relative', overflow: 'hidden' }}>
