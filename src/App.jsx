@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import './App.css';
 import Experince from './Components/Experince/Experince';
@@ -5,15 +6,29 @@ import Footer from './Components/Footer/Footer';
 import LoadingScreen from './Components/Loadin Screen/LoadingScreen';
 import Projects from './Components/Projects/Projects';
 import Skills from './Components/Skills/Skills';
+=======
+import './App.css'
+import Experince from './Components/Experince/Experince'
+import Footer from './Components/Footer/Footer'
+import LoadingScreen from './Components/Loadin Screen/LoadingScreen'
+import Projects from './Components/Projects/Projects'
+import Skills from './Components/Skills/Skills'
+>>>>>>> 28303e68757e26104395133131e52fd29c2ad2d5
 import Contact from './Components/Contact/Contact';
 import ProjectsImg from './assets/Images/Services-icons/experince-bg.jpg';
 
 function App() {
   return (
+<<<<<<< HEAD
     <ParallaxProvider>
       <LoadingScreen />
       <Skills />
 
+=======
+    <>
+      <LoadingScreen/>
+      <Skills/>
+>>>>>>> 28303e68757e26104395133131e52fd29c2ad2d5
       <div className="timeline-section">
         <div className="parallax-container" style={{ position: 'relative', overflow: 'hidden' }}>
           {/* Background Parallax (Smooth & Visible) */}
