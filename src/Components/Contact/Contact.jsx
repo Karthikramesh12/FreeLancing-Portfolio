@@ -10,13 +10,13 @@ const contactLinks = [
 
 const Contact = () => {
   return (
-    <div className="contact">
-    <div className="card shadow-lg Cv-card-contact p-md-5">
+    <div className="contact py-sm-0 py-md-5">
+    <div className="card shadow-lg contact-card p-md-5">
     <div className="p-md-5">
     <div className="row">
-      <div className="col-12 col-md-6 p-5 flex-card">
+      <div className="col-md-12  p-5 flex-card">
       <h2 className="fw-normal main-heading mt-5 mb-4 margin-contact text-start card-heading display-6 higlighted">Get in Touch</h2>
-      <p className="fs-6 text-light subtext text-center margin-contact line-height">
+      <p className="fs-6 text-light subtext px-md-5 px-sm-0 text-center margin-contact line-height">
         {`I'm eager to join a collaborative team where I can contribute my skills and learn from others. 
         If you have an exciting project, let's discuss how I can be a valuable asset!`}
       </p>
@@ -26,7 +26,7 @@ Tel: 1-800-000-0000`}
       </p>
       </div>
 
-      <div className="col-sm-12 col-md-6">
+      <div className="col-md-12 d-flex justify-content-center align-items-center">
       <ContactForm />
       </div>
       </div>

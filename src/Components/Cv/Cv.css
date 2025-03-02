@@ -10,15 +10,15 @@
     align-items: center;
     justify-content: center;
     color: whitesmoke;
-    padding: 7rem;
+    /* padding: 1rem; */
 }
 
 /* Responsive Design: Full width for small screens */
-@media screen and (max-width: 1114px) {
+@media screen and (max-width: 768px) {
     .Cv-card {
         width: 100% !important;
         left: 0%;
-        padding: 1rem;
+        /* padding: 1rem; */
     }
 }
 /* @media screen and (max-width: 768px) {
