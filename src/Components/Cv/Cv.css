@@ -1,17 +1,26 @@
-.Cv-card{
-    width: 60% !important;
+.Cv-card {
+    width: 60%;
     position: relative;
     left: 20%;
-    height: 30rem !important;
-    top: -15rem !important;
-    background-color:var(--bg-color) !important ;
-    border-radius: 0px !important;
-    border: none !important;
-    display:flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    color: whitesmoke !important;
+    background-color: var(--bg-color);
+    border-radius: 0px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    padding: 1rem;
 }
+
+/* Responsive Design: Full width for small screens */
+@media screen and (max-width: 768px) {
+    .Cv-card {
+        width: 100%;
+        left: 0;
+    }
+}
+
 .Cv-button{
     border: 1px solid  var(--text-color2) !important;
     color: var(--text-dark)  !important;

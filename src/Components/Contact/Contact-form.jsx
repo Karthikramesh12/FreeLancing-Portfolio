@@ -78,10 +78,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="container mt-4">
+    <div className="mx-4">
       <div className="row d-flex justify-content-center">
-        <div ref={formRef} className={`form-card col-md-6 p-4 shadow-lg ${visible ? "fade-in-up" : ""}`}>
-          <form className="form-floating" onSubmit={handleSubmit}>
+        <div ref={formRef} className={`form-card shadow-lg ${visible ? "fade-in-up" : ""}`}>
+          <form className="form-floating p-3" onSubmit={handleSubmit}>
             <div className="row">
               {/* First Name */}
               <div className="col-md-6">
@@ -151,10 +151,11 @@ const ContactForm = () => {
                 required
               ></textarea>
             </div>
-
-            <button type="submit" className="btn btn-outline-primary Cv-button">
+            <div className="d-flex justify-content-center align-items-center">
+            <button type="submit" className="btn btn-outline-primary  Cv-button">
               Send Message
             </button>
+            </div>
             {status && <p className="mt-3 text-center">{status}</p>}
           </form>
         </div>
