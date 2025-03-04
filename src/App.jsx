@@ -9,9 +9,9 @@ import Skills from './Components/Skills/Skills';
 
 import Contact from './Components/Contact/Contact';
 import ProjectsImg from './assets/Images/Services-icons/experince-bg.jpg';
-
+import ScrollReplaceContent from "./Components/Scroll";
 function App() {
-  return (
+  return (<>
 
     <ParallaxProvider>
       <LoadingScreen />
@@ -38,16 +38,16 @@ function App() {
               }}
             ></div>
           </Parallax>
+             
 
           {/* Normal Speed Components */}
           <div className="content" style={{ position: 'relative', zIndex: 1 }}>
             <Parallax speed={0}>
               <Projects />
-            <Parallax speed={0}>
-
               <Experince />
+              
             </Parallax>
-            </Parallax>
+            
           </div>
         </div>
       </div>
@@ -56,7 +56,10 @@ function App() {
       <div className="footer">
         <Footer />
       </div>
+      
     </ParallaxProvider>
+    
+    </>
   );
 }
 
