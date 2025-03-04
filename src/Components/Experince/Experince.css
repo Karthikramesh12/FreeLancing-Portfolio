@@ -188,3 +188,27 @@
         position: sticky !important;
         top:100vh !important;
    } */
+
+   .card-dark{
+    background-color: #333;
+   }
+   .tab-link {
+    position: relative;
+    background: none;
+    border: none;
+    /* padding-bottom: 5px; */
+    margin-left: -10px;
+  }
+  .tab-link::after{
+    transition: 0.5s ease-in !important;
+  }
+
+  .active-link::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: -3px; /* Adjust for spacing */
+    width: 50%;
+    height: 3px;
+    background-color: var(--text-bold);
+  }

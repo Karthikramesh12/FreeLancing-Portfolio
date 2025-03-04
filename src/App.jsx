@@ -19,22 +19,22 @@ function App() {
 
 
       <div className="timeline-section">
-        <div className="parallax-container" style={{ position: 'relative', overflow: 'hidden' }}>
+        <div className="" style={{ position: 'relative', overflow: 'hidden' }}>
           {/* Background Parallax (Smooth & Visible) */}
           <Parallax speed={-30}>  {/* Reduced speed to make effect visible */}
             <div
-              className="parallax-bg"
+              className=""
               style={{
                 backgroundImage: `url(${ProjectsImg})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
-                height: '300vh',  // Covers both components fully
-                width: '130vw',   // Slightly increased width
-                position: 'absolute',   // Prevents early cutoff
-                left: '-15vw',     // Centers image properly
+                height: '300vh', 
+                width: '130vw', 
+                position: 'absolute',   
+                left: '-15vw',    
                 zIndex: 100,
-                top: '-50px'
+                top: '-100px'
               }}
             ></div>
           </Parallax>
