@@ -1,199 +1,152 @@
-// import { useEffect, useRef } from "react";
 import { useState } from "react";
 import "./Experince.css";
-import "../Hero/Hero.css";
-import Karthik from '../../assets/Images/Karthik.png'
-// const experienceData = [
-//   {
-//     year: "2019",
-//     title: "High School",
-//     description:
-//       "I completed my high school at Agragami Vidya Kendra CBSE board in the year 2019. Learned some important skills such as time management and communication, etc.",
-//   },
-//   {
-//     year: "2021",
-//     title: "Pre University",
-//     description:
-//       "I completed my pre-university at the same school as my high school under the state syllabus. The course I opted for was PCMB, and I completed my pre-university in the year 2021.",
-//   },
-//   {
-//     year: "2022",
-//     title: "University",
-//     description:
-//       "I joined university in the year 2022 and opted for Electronics and Telecommunications Engineering as my course at Sir M Visvesvaraya Institute of Technology, Bangalore.",
-//   },
-//   {
-//     year: "2023",
-//     title: "Internship",
-//     description:
-//       "I completed my first internship in the year 2023 at a company called Varcons Technology under the topic of Machine Learning.",
-//   },
-// ];
+import Karthik from "../../assets/Images/Karthik.png";
+import Venkatesh from "../../assets/Images/Venkatesh.jpg";
 
 function Experience() {
-  // const timelineRef = useRef(null);
-  // let timeoutRef = useRef(null); // Reference for timeout to slow down update
+  const [activeTabs, setActiveTabs] = useState({
+    "Karthik Ramesh": "skills",
+    "Venkatesh Rayudu": "skills",
+  });
 
-  // useEffect(() => {
-  //   const timeline = timelineRef.current;
+  const handleTabClick = (memberName, tab) => {
+    setActiveTabs((prevTabs) => ({ ...prevTabs, [memberName]: tab }));
+  };
 
-  //   const handleScroll = () => {
-  //     clearTimeout(timeoutRef.current); // Clear previous timeout to avoid rapid updates
+  const members = [
+    {
+      name: "Karthik Ramesh",
+      image: Karthik,
+      role: "Web Developer",
+      description:
+        "Passionate web developer with a keen eye for creating intuitive and responsive web applications.",
+      details: {
+        skills: ["React.js", "JavaScript", "HTML/CSS", "Node.js", "Bootstrap"],
+        experience: [
+          {
+            role: "Senior Web Developer",
+            company: "Tech Innovations Inc.",
+            duration: "2020-Present",
+            description:
+              "Led frontend development teams and implemented scalable web applications.",
+          },
+        ],
+        education: [
+          {
+            degree: "Bachelor of Science in Computer Science",
+            institution: "University of Technology",
+            duration: "2013-2017",
+            description:
+              "Graduated with honors, specialized in web technologies and software engineering.",
+          },
+        ],
+      },
+    },
+    {
+      name: "Venkatesh Rayudu",
+      image: Venkatesh,
+      role: "Full Stack Developer",
+      description:
+        "Experienced full-stack developer with a strong foundation in building scalable and efficient web applications.",
+      details: {
+        skills: ["MongoDB", "Express.js", "React.js", "Node.js", "Firebase"],
+        experience: [
+          {
+            role: "Full Stack Developer",
+            company: "Innovative Tech Solutions",
+            duration: "2022-Present",
+            description:
+              "Developed and deployed full-stack applications with seamless user experiences.",
+          },
+        ],
+        education: [
+          {
+            degree: "Bachelor of Engineering in Computer Science",
+            institution: "ABC Engineering College",
+            duration: "2019-2023",
+            description:
+              "Specialized in web development and artificial intelligence applications.",
+          },
+        ],
+      },
+    },
+  ];
 
-  //     timeoutRef.current = setTimeout(() => {
-  //       const scrollY = window.scrollY;
-  //       const timelineTop = timeline.offsetTop;
-  //       const windowHeight = window.innerHeight;
-  //       const totalHeight = timeline.scrollHeight;
+  return (
+    <div className="container mt-5">
+      <div className="card-container">
+        {members.map((member, index) => (
+          <div key={index} className="card-wrapper">
+            <div className="card mb-5 card-experience p-4 shadow-lg card-dark">
+              <div className="row">
+                {/* Image Card */}
+                <div className="col-md-4 text-center">
+                  <img
+                    src={member.image}
+                    alt="Profile"
+                    className="rounded-circle img-fluid w-75"
+                  />
+                  <h5 className="mt-3 text-light fw-bold fs-3">
+                    {member.name}
+                  </h5>
+                </div>
 
-  //       let fillHeight = ((scrollY + windowHeight - timelineTop) / totalHeight) * 100;
-  //       fillHeight = Math.max(0, Math.min(fillHeight, 100)); // Keep it within 0-100%
+                {/* About Section */}
+                <div className="col-md-8">
+                  <h2 className="mb-4 display-5 text-light">About Me</h2>
+                  <p className="lead text-light">{member.description}</p>
 
-  //       timeline.style.setProperty("--timeline-fill", `${fillHeight}%`);
-  //     }, 100); // Adds a small delay to slow down updates
-  //   };
+                  {/* Tabbed Navigation */}
+                  <div className="d-flex mb-3">
+                    {Object.keys(member.details).map((tab) => (
+                      <button
+                        key={tab}
+                        className={`btn btn-outline-light me-3 ${
+                          activeTabs[member.name] === tab ? "active" : ""
+                        }`}
+                        onClick={() => handleTabClick(member.name, tab)}
+                      >
+                        {tab.charAt(0).toUpperCase() + tab.slice(1)}
+                      </button>
+                    ))}
+                  </div>
 
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //     clearTimeout(timeoutRef.current);
-  //   };
-  // }, []);
+                  {/* Dynamic Content Area */}
+                  <div className="text-light">
+                    {activeTabs[member.name] === "skills" && (
+                      <ul>
+                        {member.details.skills.map((skill, index) => (
+                          <li key={index}>{skill}</li>
+                        ))}
+                      </ul>
+                    )}
 
-  // return (
-  //   <section className="mt-5 mb-5" id="education" ref={timelineRef}>
+                    {activeTabs[member.name] === "experience" &&
+                      member.details.experience.map((job, index) => (
+                        <div key={index} className="mb-3">
+                          <h5 className="fw-bold">{job.role}</h5>
+                          <p>{job.company} | {job.duration}</p>
+                          <p>{job.description}</p>
+                        </div>
+                      ))}
 
-  //     <div className="d-flex justify-content-center align-items-center">
-  //       <h2 className="heading display-1 text-light higlighted">03 Experience</h2>
-  //     </div>
-
-  //     <div className="timeline-items">
-  //       {experienceData.map((item, index) => (
-  //         <div className="timeline-item text-color" key={index}>
-  //           <div className="timeline-dot"></div>
-  //           <div className="timeline-data text-light">{item.year}</div>
-  //           <div className="timeline-content d-flex justify-content-center align-items-left flex-column container w-50 text-light text-align">
-  //             <h3>{item.title}</h3>
-  //             <p>{item.description}</p>
-  //           </div>
-  //         </div>
-  //       ))}
-  //     </div>
-  //   </section>
-  // );
-  const [activeTab, setActiveTab] = useState('skills');
-
-// Dynamic Data
-const skills = ["React.js", "JavaScript", "HTML/CSS", "Node.js", "Bootstrap"];
-
-const experience = [
-  {
-    role: "Senior Web Developer",
-    company: "Tech Innovations Inc.",
-    duration: "2020-Present",
-    description: "Led frontend development teams and implemented scalable web applications."
-  },
-  {
-    role: "Web Developer",
-    company: "Digital Solutions LLC",
-    duration: "2017-2020",
-    description: "Developed responsive web applications and maintained client websites."
-  }
-];
-
-const education = [
-  {
-    degree: "Bachelor of Science in Computer Science",
-    institution: "University of Technology",
-    duration: "2013-2017",
-    description: "Graduated with honors, specialized in web technologies and software engineering."
-  }
-];
-
-// Content for different tabs
-const tabContent = {
-  skills: (
-    <div>
-      <h4 className="fs-1 display-4 higlighted">Skills</h4>
-      <ul>
-        {skills.map((skill, index) => (
-          <li key={index}>{skill}</li>
+                    {activeTabs[member.name] === "education" &&
+                      member.details.education.map((edu, index) => (
+                        <div key={index} className="mb-3">
+                          <h5 className="fw-bold">{edu.degree}</h5>
+                          <p>{edu.institution} | {edu.duration}</p>
+                          <p>{edu.description}</p>
+                        </div>
+                      ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         ))}
-      </ul>
-    </div>
-  ),
-  experience: (
-    <div>
-      <h4 className="fs-1 mb-3 higlighted">Professional Experience</h4>
-      {experience.map((job, index) => (
-        <div key={index}>
-          <h5 className="fs-4 fw-normal display-4">{job.role}</h5>
-          <p>{job.company} | {job.duration}</p>
-          <p>{job.description}</p>
-        </div>
-      ))}
-    </div>
-  ),
-  education: (
-    <div>
-      <h4 className="fs-1 mb-3 higlighted">Education</h4>
-      {education.map((edu, index) => (
-        <div key={index}>
-          <h5 className="fs-4 fw-normal display-4">{edu.degree}</h5>
-          <p>{edu.institution} | {edu.duration}</p>
-          <p>{edu.description}</p>
-        </div>
-      ))}
-    </div>
-  )
-};
-
-return (
-  <div className="container mt-5">
-    <div className="row">
-      {/* Image Card */}
-      <div className="col-md-4">
-        <div className="card h-100 card-dark">
-          <img 
-            src={Karthik} 
-            alt="Profile" 
-            className="card-img-top w-100 card-image"
-          />
-          <h5 className="text-center text-light fw-normal fs-1 higlighted">
-            Karthik <span className="color higlighted">Ramesh</span>
-          </h5>
-        </div>
-      </div>
-
-      {/* About Section */}
-      <div className="col-md-8">
-        <h2 className="mb-4 higlighted display-3 text-dark">About Us</h2>
-        <p className="lead text-dark">
-          Passionate web developer with a keen eye for creating intuitive and 
-          responsive web applications. Committed to delivering high-quality 
-          solutions that meet both user needs and business objectives.
-        </p>
-
-        {/* Tabbed Navigation */}
-        {Object.keys(tabContent).map((tab) => (
-          <button 
-            key={tab} 
-            className={`btn text-dark me-4 mb-3 tab-link fs-6 fw-normal text-uppercase ${activeTab === tab ? 'active-link' : ''}`} 
-            onClick={() => setActiveTab(tab)}
-          >
-            {tab.charAt(0).toUpperCase() + tab.slice(1)}
-          </button>
-        ))}
-
-        {/* Dynamic Content Area */}
-        <div className="tab-content text-dark">
-          {tabContent[activeTab]}
-        </div>
       </div>
     </div>
-  </div>
-);
-
+  );
 }
 
 export default Experience;
