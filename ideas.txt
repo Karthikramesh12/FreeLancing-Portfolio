@@ -7,3 +7,24 @@ the next section is about us and we can use this https://yasio.dev/ for insipera
 the next section must be testimonials which we can have the same one as the mentors section in deep-ai.com which we made 
 
 for contact us i still dont have any idea and the same for footer also I'm still looking for the color pallets.
+
+
+
+this is how to push code into GitHub 
+
+git add .
+
+git commit -m "your message"
+
+git push -u origin peeps
+
+this is how to pull code from GitHub
+
+git checkout master
+
+git pull -u origin master
+
+git checkout peeps
+
+git rebase master
+
