@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Experince.css";
+import '../Hero/Hero.css'
 import Karthik from "../../assets/Images/Karthik.png";
 import Venkatesh from "../../assets/Images/Venkatesh.jpg";
 
@@ -86,14 +87,14 @@ function Experience() {
                     alt="Profile"
                     className="rounded-circle img-fluid w-75"
                   />
-                  <h5 className="mt-3 text-light fw-bold fs-3">
+                  <h5 className="mt-3 fw-normal display-6 higlighted text-light">
                     {member.name}
                   </h5>
                 </div>
 
                 {/* About Section */}
                 <div className="col-md-8">
-                  <h2 className="mb-4 display-5 text-light">About Me</h2>
+                  <h2 className="mb-4 display-5 text-light higlighted">About <span className="color higlighted">Me</span></h2>
                   <p className="lead text-light">{member.description}</p>
 
                   {/* Tabbed Navigation */}
@@ -124,7 +125,7 @@ function Experience() {
                     {activeTabs[member.name] === "experience" &&
                       member.details.experience.map((job, index) => (
                         <div key={index} className="mb-3">
-                          <h5 className="fw-bold">{job.role}</h5>
+                          <h5 className="fw-normal display-6 higlighted">{job.role}</h5>
                           <p>{job.company} | {job.duration}</p>
                           <p>{job.description}</p>
                         </div>
@@ -133,7 +134,7 @@ function Experience() {
                     {activeTabs[member.name] === "education" &&
                       member.details.education.map((edu, index) => (
                         <div key={index} className="mb-3">
-                          <h5 className="fw-bold">{edu.degree}</h5>
+                          <h5 className="fw-normal display-6 higlighted">{edu.degree}</h5>
                           <p>{edu.institution} | {edu.duration}</p>
                           <p>{edu.description}</p>
                         </div>
